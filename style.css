@@ -1,0 +1,244 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: grey; */
+}
+*::before{
+    content: "";
+    background-color: rgb(243, 126, 126);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    top: 0px; 
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* top:0px;
+    left:0px; */
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#logo img :hover{
+    animation-name: nafis ;
+
+}
+/* @keyframes nafis{
+    zoom: 1.05;} */
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.75;
+    
+}
+/* services section */
+ #services{
+     margin: 34px;
+     display: flex;
+     /* background-color: rgb(224, 105, 105); */
+
+ }
+ #services .box{
+     border: 2px solid brown;
+     background-color: #e9c7c7;
+      padding: 34px;
+      margin: 7px;
+      border-radius: 5px;
+      width: 33%;
+ }
+ #services .box img{
+     height: 157px;
+     display: block;
+     margin: auto;
+ }
+ #services .box p{
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 1.57rem;
+ }
+ /* clients section */
+ #client-section{
+     position: relative;
+    height: 344px;
+    top: -42px;
+ }
+ #client-section::before{
+     content: "";
+     position: absolute;
+     background: url('../bg2.jpg');
+     width: 100%;
+     height: 75%;
+     z-index: -1;    
+     opacity: 0.75;
+ }
+ #clients{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #client-items{
+     padding: 17px;
+     margin: 5px;
+ }
+ #client-items img{
+     
+     margin: 5px;
+ }
+ /* contact section */
+ #contact{
+     position: relative;
+     top: -127px;
+     color: white;
+ }
+ #contact::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 129%;
+     z-index: -1;
+     opacity: 0.57;
+     background: url('../system.jpg') no-repeat center center/cover;
+ }
+ #contact-box{
+    align-items: center;
+    text-align: center;
+ }
+ #contact-box input{
+    width: 37%;
+    border-radius: 7px;
+    margin: 5px 7px;
+    font-family: 'Baloo Bhai', cursive;
+ }
+ textarea{
+     resize: none;
+     height: 107px;
+     width: 557px;
+     border-radius: 7px;
+     font-family: 'Baloo Bhai', cursive;
+     border: 2px solid black;
+ }
+ #contact-box #submit-button{
+     width: 54px;
+ }
+ /* Footer part */
+ footer{
+     align-items: center;
+     text-align: center;
+     position: relative;
+     top: 0px;
+     background-color: black;
+     color: white;
+     font-family: Baloo Bhai, cursive;
+ }
+/* utility class */
+.h-primary{
+    font-size: 3.75rem;
+    padding: 12px; 
+}
+.h-secondary{
+    font-size: 2.57rem;
+    padding: 12px;
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+}
+#Home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Rock 3D', cursive;
+    /* background-color: #edffec; */
+}
+#Home p{
+    color: white;
+    text-align: center;
+    font-size: 1.57rem;
+    font-family: 'Ubuntu', cursive;
+}
+.btn{
+    color: gray;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', cursive;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    /* background-color: #edffec; */
+}
+.last{
+    text-align: center;
+    font-size: 1.3rem;
+}
+ul,h3{
+    font-family: 'Yuji Hentaigana Akebono', cursive;
+    font-size: 1.07rem;
+}
