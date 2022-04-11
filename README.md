@@ -1,0 +1,2 @@
+# Online-Food-Services
+The main target of this project to spread facility of Food and Catering services using a website. Using this website one can get various facilities like food ordering, food catering and bulk orders etc. The main purpose of this website is to save time of client as contact us options are also available there so no need for walk in or physical meetings with us which can ultimately save clients time.
